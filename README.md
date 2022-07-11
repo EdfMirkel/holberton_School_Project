@@ -1,4 +1,4 @@
-#Remarque :
+# Remarque :
 
 Pour qu'il soit le bon fonctionnement de l'application, télécharger l'extension Live Server de VS Code et lancer.
 
