@@ -1,0 +1,209 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+header{
+    overflow: hidden;
+}
+
+header .navbar_logo{
+    background-position: center;
+    background-image: url(https://resistanceinventerre.files.wordpress.com/2016/06/logo-plantes.png);
+    background-repeat: no-repeat, repeat;
+    margin: auto;
+    width: 20%;
+    height:100%;
+    background-size: contain;
+    float: left;
+}
+
+header nav { 
+    position: fixed;
+    display: inline-block;
+    /* border-color: mediumspringgreen; */
+    /* text-align: center; */
+}
+
+nav ul{
+    display: inline-flex;
+}
+nav ul li{
+    font-size: 1.2em;
+    width: auto;
+    height: 20px;
+    /* margin: 1px; */
+}
+
+header ul>.index {
+    background-color: greenyellow;
+    padding: 2%;
+    }
+    header ul>.index:hover {
+        background-color: rgb(147, 241, 7);
+        padding: 4%;
+        }
+
+header ul>.tweets {
+    background-color: fuchsia;
+    padding: 2%;
+}
+header ul>.tweets:hover {
+    background-color: rgb(209, 4, 209);
+    padding: 4%;
+}
+header ul>.about {
+    background-color: rgb(221, 235, 100);
+    padding: 2%;
+}
+header ul>.about:hover {
+    background-color: rgb(209, 231, 4);
+    padding: 4%;
+}
+header ul>.contact {
+    background-color: rgb(113, 195, 233);
+    padding: 2%;
+}
+header ul>.contact:hover {
+    background-color: rgb(7, 157, 226);
+    padding: 4%;
+}
+
+header ul a:hover {
+    color: lightyellow;
+    }
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    overflow: hidden;
+    text-align: justify;
+}
+article{
+    flex: 2;
+    overflow-y: auto;
+}
+article h1{
+    text-align: center;
+}
+article img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article iframe {
+    height: 440px;
+    width: 90%;
+}
+
+.video{
+margin: 2em;
+}
+
+@media (max-width: 768px) {
+
+    iframe,
+    .video {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 14em;
+    }
+}
+header .right {
+    display: flex;
+    flex-direction: row;
+  }
+
+aside{
+    flex: 1;
+    overflow-y: auto
+}
+@media (max-width: 1020px) {
+    header .right {
+        flex-direction: column;
+        align-items: center;
+        margin: -20px 5px 15px 20px;
+    }
+    header .share{
+        margin: 1em;
+    }
+
+    main{
+    flex-direction: column;
+    }
+
+    aside {
+        overflow: hidden;
+        width: auto;
+    }
+    article{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.galery{
+    text-align: center;
+    padding: 1em;
+}
+.galery img{
+    padding: 1em;
+}
+
+footer{
+    margin-top: 3em;
+    padding: 1em;
+    border-radius: 2em 2em 0em 0em;
+    border: solid;
+}
+
+.comment {
+    font-family: 'Qwigley', cursive;
+    font-size: 3em;
+    color: #f3f4f6;
+    text-shadow: 1px 3px black;
+    text-align: center;
+  }
+  
+  input, textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    margin: 8px 0;
+    text-indent: 1em;
+    padding: 10px 0;
+    border-radius: 3px;
+    border: 1px solid lightgray;
+  }
+  
+  input[type="submit"] {
+    background-color: #4d90fe;
+    color: white;
+    border: 1px solid #3079ed;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #4d9aff;
+  }
+
+.galery img {
+	max-width: 70%;
+	cursor: pointer;
+    border-radius: 40px;
+}
+
+.galery img:hover {
+	opacity: 0.75;
+}
+
+article .org{
+    /* margin: 2%; */
+    padding: 2%;
+    width: 40%;
+    height: 200px;
+}
+article u{
+    font-size: small;
+}
